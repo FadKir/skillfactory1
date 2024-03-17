@@ -1,17 +1,17 @@
 ## Проект: EDA + Feature Engineering. Соревнование на Kaggle
 
 ## Оглавление  
-[1. Описание проекта](https://github.com/FadKir/skillfactory/tree/master/Project-2#описание-проекта)  
-[2. Какой кейс решаем?](https://github.com/FadKir/skillfactory/tree/master/Project-2#какой-кейс-решаем)  
-[3. Краткая информация о данных](https://github.com/FadKir/skillfactory/tree/master/Project-2#краткая-информация-о-данных)  
-[4. Этапы работы над проектом](https://github.com/FadKir/skillfactory/tree/master/Project-2#этапы-работы-над-проектом)  
-[5. Результат](https://github.com/FadKir/skillfactory/tree/master/Project-2#результаты)    
-[6. Выводы](https://github.com/FadKir/skillfactory/tree/master/Project-2#выводы) 
+[1. Описание проекта](https://github.com/FadKir/skillfactory1/blob/main/Project-3/README.md#описание-проекта)  
+[2. Какой кейс решаем?](https://github.com/FadKir/skillfactory1/blob/main/Project-3/README.md#какой-кейс-решаем)  
+[3. Краткая информация о данных](https://github.com/FadKir/skillfactory1/blob/main/Project-3/README.md#краткая-информация-о-данных)  
+[4. Этапы работы над проектом](https://github.com/FadKir/skillfactory1/blob/main/Project-3/README.md#этапы-работы-над-проектом)  
+[5. Результат](https://github.com/FadKir/skillfactory1/blob/main/Project-3/README.md#результаты)    
+[6. Выводы](https://github.com/FadKir/skillfactory1/blob/main/Project-3/README.md#выводы) 
 
 ### Описание проекта    
 Представьте, что вы работаете дата-сайентистом в компании Booking. Одна из проблем компании — это нечестные отели, которые накручивают себе рейтинг. Одним из способов обнаружения таких отелей является построение модели, которая предсказывает рейтинг отеля. Если предсказания модели сильно отличаются от фактического результата, то, возможно, отель ведёт себя нечестно, и его стоит проверить.
 
-:arrow_up:[к оглавлению](https://github.com/FadKir/skillfactory/tree/master/Project-2#оглавление)
+:arrow_up:[к оглавлению](https://github.com/FadKir/skillfactory1/blob/main/Project-3/README.md#оглавление)
 
 ### Какой кейс решаем?
 Модель, которую мы будете обучать, должна предсказывать рейтинг отеля по данным сайта Booking на основе имеющихся в датасете данных. Изученные нами навыки разведывательного анализа помогут улучшить модель.
@@ -30,26 +30,29 @@
 
 Обратите внимание, что к данному соревнованию создано базовое решение:
 
-:arrow_up:[к оглавлению](https://github.com/FadKir/skillfactory/tree/master/Project-2#оглавление)
+:arrow_up:[к оглавлению](https://github.com/FadKir/skillfactory1/blob/main/Project-3/README.md#оглавление)
 
 Что практикуем
-    - Визуальный анализ данных.
-    - Статистический анализ данных.
-    - Feature Engineering.
-    - Алгоритм RandomForestRegressor
-    - MAPE – средняя абсолютная ошибка в процентахх.
 
-:arrow_up:[к оглавлению](https://github.com/FadKir/skillfactory/tree/master/Project-2#оглавление)
+ - Визуальный анализ данных.
+ - Статистический анализ данных.
+ - Feature Engineering.
+ - Алгоритм RandomForestRegressor
+ - MAPE – средняя абсолютная ошибка в процентахх.
+
+:arrow_up:[к оглавлению](https://github.com/FadKir/skillfactory1/blob/main/Project-3/README.md#оглавление)
 
 ### Краткая информация о данных
 В этом модуле вы будете работать с датасетом, в котором содержатся сведения о 515 000 отзывов на отели Европы. 
+
 Файлы для соревнования
-    - hotels_train.csv - набор данных для обучения
-    - hotels_test.csv - набор данных для оценки качества
-    - submission.csv - файл сабмишна в нужном формате
+
+ - hotels_train.csv - набор данных для обучения
+ - hotels_test.csv - набор данных для оценки качества
+ - submission.csv - файл сабмишна в нужном формате
 
 Данные содержат следующие столбцы:
- - hotel_address — адрес отеля;
+ - hotel_address — адрес отеля; 
  - review_date — дата, когда рецензент разместил соответствующий отзыв;
  - average_score — средний балл отеля, рассчитанный на основе последнего комментария за последний год;
  - hotel_name — название отеля;
@@ -68,33 +71,33 @@
  - lat — географическая широта отеля;
  - lng — географическая долгота отеля.
 
-:arrow_up:[к оглавлению](https://github.com/FadKir/skillfactory/tree/master/Project-2#оглавление)
+:arrow_up:[к оглавлению](https://github.com/FadKir/skillfactory1/blob/main/Project-3/README.md#оглавление)
 
 ### Этапы работы над проектом  
 Данный проект содержит 6 этапов:
-    - Загрузка данных
-    - Знакомство с данными
-    - Работа с признаками
-        - Преобразование признака 'hotel_address'
-        - Преобразование признаков 'lat, lng' - заполнение пропусков в данных
-        - Преобразование признака 'tags'
-        - Преобразование признака 'review_date'
-        - Преобразование признака 'hotel_name'
-        - Преобразование признака 'reviewer_nationality'
-        - Преобразование признака 'days_since_review'
-        - Преобразование признаков 'negative_review', 'positive_review'
-        - Преобразование признаков 'review_total_negative_word_counts', 'review_total_positive_word_counts'
-        - Преобразование признака 'total_number_of_reviews_reviewer_has_given'
-    - Очистка и выбор признаков
-        - Очистка датасета от исходных (и более не требующихся) признаков
-        - Анализ мультиколлинеарности
-        - Оценка значимости признаков
-            - Оценка значимости категориальных признаков
-            - Оценка значимости числовых признаков
-    - Обучение модели
-        - Обучения модели с помощью модуля RandomForestRegressor
+ - Загрузка данных    
+ - Знакомство с данными
+ - Работа с признаками
+  - Преобразование признака 'hotel_address'
+   - Преобразование признаков 'lat, lng' - заполнение пропусков в данных
+   - Преобразование признака 'tags'
+   - Преобразование признака 'review_date'
+   - Преобразование признака 'hotel_name'
+   - Преобразование признака 'reviewer_nationality'
+   - Преобразование признака 'days_since_review'
+   - Преобразование признаков 'negative_review', 'positive_review'
+   - Преобразование признаков 'review_total_negative_word_counts', 'review_total_positive_word_counts'
+   - Преобразование признака 'total_number_of_reviews_reviewer_has_given'
+ - Очистка и выбор признаков
+  - Очистка датасета от исходных (и более не требующихся) признаков
+   - Анализ мультиколлинеарности
+   - Оценка значимости признаков
+    - Оценка значимости категориальных признаков
+    - Оценка значимости числовых признаков
+ - Обучение модели
+  - Обучения модели с помощью модуля RandomForestRegressor
 
-:arrow_up:[к оглавлению](https://github.com/FadKir/skillfactory/tree/master/Project-2#оглавление)
+:arrow_up:[к оглавлению](https://github.com/FadKir/skillfactory1/blob/main/Project-3/README.md#оглавление)
 
 
 ### Результаты:  
@@ -104,10 +107,10 @@
 Ознакомится с моделью до работы с признаками, а так же с ответами на ряд контрольных вопросов: (https://github.com/FadKir/skillfactory1/blob/main/Project-3/PROJECT_3_EDA.ipynb)
 
 
-:arrow_up:[к оглавлению](https://github.com/FadKir/skillfactory/tree/master/Project-2#оглавление)
+:arrow_up:[к оглавлению](https://github.com/FadKir/skillfactory1/blob/main/Project-3/README.md#оглавление)
 
 
 ### Выводы:  
 Получилось провести преобразование признаков в результате чего мы добились нужных результатов по снижению метрики, успешно провели обучение модели.
 
-:arrow_up:[к оглавлению](https://github.com/FadKir/skillfactory/tree/master/Project-2#оглавление)
+:arrow_up:[к оглавлению](https://github.com/FadKir/skillfactory1/blob/main/Project-3/README.md#оглавление)
