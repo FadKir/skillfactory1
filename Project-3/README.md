@@ -102,8 +102,11 @@
 
 ### Результаты:  
 По итогам выполнения проекта сформурованое решение проекта опубликовано на  www.kaggle.com в рамках соревнования (https://www.kaggle.com/code/kirill1990/project-3)
+
 Результатом стало снижение MAPE с 0,14 (14) до 0,12 (12)
+
 Ознакомиться с работой: (https://github.com/FadKir/skillfactory1/blob/main/Project-3/PROJECT_EDA3_Kaggle.ipynb)
+
 Ознакомится с моделью до работы с признаками, а так же с ответами на ряд контрольных вопросов: (https://github.com/FadKir/skillfactory1/blob/main/Project-3/PROJECT_3_EDA.ipynb)
 
 
